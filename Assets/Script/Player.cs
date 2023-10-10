@@ -39,10 +39,10 @@ public class Player : MonoBehaviour
     }
     public static void GetLife()
     {
-        if(pointtoHp >= 200)
+        if(pointtoHp >= 2000)
         {
             life += 1;
-            pointtoHp = pointtoHp - 200;
+            pointtoHp = pointtoHp - 2000;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
