@@ -12,7 +12,10 @@ public class Player : MonoBehaviour
     public static int life = 2;
     public int maxHealth = 100;
     public static int currentHealth = 100;
+    public int maxStamina = 100;
+    public static int currentStamina = 100;
     [SerializeField] HealthBar healthBar;
+    [SerializeField] StaminaBar staminaBar;
     [SerializeField] Animator animator;
     [SerializeField] GameObject gameOverUI;
     public static int currentScene = 1;
@@ -22,6 +25,7 @@ public class Player : MonoBehaviour
     public Vector3 respawnPoint;
     public static int point = 0;
     public static int pointtoHp = 0;
+    private float timer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +33,8 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
+        staminaBar.SetMaxStamina(maxStamina);
+        staminaBar.SetStamina(currentStamina);
         respawnPoint = transform.position;
     }
 
@@ -36,6 +42,24 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+    }
+    private void Update()
+    {
+        healthBar.SetHealth(currentHealth);
+        staminaBar.SetStamina(currentStamina);
+
+    }
+    private void FixedUpdate()
+    {
+     
+        timer += Time.deltaTime;
+        if(currentStamina < 100 && currentHealth>0 && timer > 1)
+        {
+            timer -= 1;
+            currentStamina++;
+
+        }
+       
     }
     public static void GetLife()
     {
@@ -128,7 +152,6 @@ public class Player : MonoBehaviour
             src.Play();
         }
         currentHealth = 0;
-        healthBar.SetHealth(currentHealth);
         animator.SetTrigger("isDeath");
         Invoke("GameOver", 1f);
     }
@@ -144,7 +167,7 @@ public class Player : MonoBehaviour
         {
             transform.position = respawnPoint;
             currentHealth = maxHealth;
-            healthBar.SetHealth(currentHealth);
+            currentStamina = maxStamina;
 
         }
         if (life == 0)

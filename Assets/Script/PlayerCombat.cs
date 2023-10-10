@@ -17,7 +17,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] AudioClip atkK;
     [SerializeField] AudioClip atkL;
     protected bool checkAtkL = false;
-    
+
+
 
     void Update()
     {
@@ -29,7 +30,7 @@ public class PlayerCombat : MonoBehaviour
             }
             AtkJ();
         }
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && Player.currentStamina >=20)
         {
             if (EventManager.checkAudio)
             {
@@ -38,7 +39,7 @@ public class PlayerCombat : MonoBehaviour
             }
             AtkK();
         }
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L) && Player.currentStamina >= 40)
         {
             if (EventManager.checkAudio)
             {
@@ -82,6 +83,9 @@ public class PlayerCombat : MonoBehaviour
                 enemy.GetComponent<Boss>().TakeDamage(attackDamageK);
             }
         }
+        Player.currentStamina -= 20;
+
+
     }
     void AtkL()
     {
@@ -108,6 +112,7 @@ public class PlayerCombat : MonoBehaviour
                 enemy.GetComponent<Boss>().TakeDamage(attackDamageL);
             }
         }
+        Player.currentStamina -= 40;
         Invoke("CheckAtkL", 1f);
 
     }

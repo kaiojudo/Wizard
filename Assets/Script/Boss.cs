@@ -10,10 +10,12 @@ public class Boss : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletPos;
     [SerializeField] private Transform player;
-    private bool faceRight;
+
+
     private float timer;
     private void Start()
     {   
+
         curentHealth = maxHealth;
         animator = GetComponent<Animator>();
 
@@ -52,11 +54,6 @@ public class Boss : MonoBehaviour
             }
         }
     }
-    private void FixedUpdate()
-    {
-      
-
-    }
     void Shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
@@ -68,6 +65,11 @@ public class Boss : MonoBehaviour
         if (curentHealth <= 0)
         {
             Die();
+            if (Player.currentStamina < 60)
+            {
+                Player.currentStamina += 40;
+
+            }
             Player.point += 500;
             Player.pointtoHp += 500;
             Player.GetLife();

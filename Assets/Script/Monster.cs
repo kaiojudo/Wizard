@@ -15,6 +15,7 @@ public class Monster : MonoBehaviour
     private Transform currentPoint;
     public float speed = 2;
 
+
     void Start()
     {
         curentHealth = maxHealth;
@@ -61,6 +62,14 @@ public class Monster : MonoBehaviour
         if (curentHealth <= 0)
         {
             Die();
+            if (Player.currentStamina < 80)
+            {
+                Player.currentStamina += 20;
+                
+            }
+            if(Player.currentStamina > 80) {
+                Player.currentStamina = 100;
+            }
             Player.point += 200;
             Player.pointtoHp += 200;
             Player.GetLife();
