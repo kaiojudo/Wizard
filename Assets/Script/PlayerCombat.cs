@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -16,21 +17,25 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] AudioClip atkJ;
     [SerializeField] AudioClip atkK;
     [SerializeField] AudioClip atkL;
+    private bool isATKJ;
+    private bool isATKK;
+    private bool isATKL;
     protected bool checkAtkL = false;
 
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J)) {
+        if (isATKJ) {
             if (EventManager.checkAudio)
             {
                 src.clip = atkJ;
                 src.Play();
             }
             AtkJ();
+            isATKJ = false;
         }
-        if (Input.GetKeyDown(KeyCode.K) && Player.currentStamina >=20)
+        if (isATKK && Player.currentStamina >=20)
         {
             if (EventManager.checkAudio)
             {
@@ -38,8 +43,10 @@ public class PlayerCombat : MonoBehaviour
                 src.Play();
             }
             AtkK();
+            isATKK = false;
+
         }
-        if (Input.GetKeyDown(KeyCode.L) && Player.currentStamina >= 40)
+        if (isATKL && Player.currentStamina >= 40)
         {
             if (EventManager.checkAudio)
             {
@@ -47,8 +54,34 @@ public class PlayerCombat : MonoBehaviour
                 src.Play();
             }
             AtkL();
+            isATKL = false;
+
         }
-     
+
+    }
+    public void pointerDownJ()
+    {
+        isATKJ = true;
+    }
+    public void pointerDownK()
+    {
+        isATKK = true;
+    }
+    public void pointerDownL()
+    {
+        isATKL = true;
+    }
+    public void pointerUpJ()
+    {
+        isATKJ = false;
+    }
+    public void pointerUpK()
+    {
+        isATKK = false;
+    }
+    public void pointerUpL()
+    {
+        isATKL = false;
     }
     void AtkJ()
     {
