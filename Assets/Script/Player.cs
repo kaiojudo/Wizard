@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
         staminaBar.SetMaxStamina(maxStamina);
         staminaBar.SetStamina(currentStamina);
         respawnPoint = transform.position;
+        
     }
 
     void TakeDamage(int damage)
@@ -51,7 +52,6 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-     
         timer += Time.deltaTime;
         if(currentStamina < 100 && currentHealth>0 && timer > 1)
         {
@@ -80,6 +80,8 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Monster"))
         {
+
+            Debug.Log(currentHealth);
             if (EventManager.checkAudio)
             {
                 src.clip = takeDmgEff;
