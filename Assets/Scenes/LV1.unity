@@ -1514,9 +1514,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2143220120}
-          m_TargetAssemblyTypeName: Move, Assembly-CSharp
-          m_MethodName: pointerUpJump
+        - m_Target: {fileID: 2143220112}
+          m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+          m_MethodName: pointerUpL
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1543,9 +1543,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2143220120}
-          m_TargetAssemblyTypeName: Move, Assembly-CSharp
-          m_MethodName: pointerDownJump
+        - m_Target: {fileID: 2143220112}
+          m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+          m_MethodName: pointerDownL
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2795,7 +2795,7 @@ Transform:
   m_GameObject: {fileID: 337938458}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.27, y: 6.62, z: -10}
+  m_LocalPosition: {x: -9.1, y: 1.53, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4294,7 +4294,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.27, y: 6.62, z: -10}
+  m_LocalPosition: {x: -9.1, y: 1.53, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12859,9 +12859,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2143220120}
-          m_TargetAssemblyTypeName: Move, Assembly-CSharp
-          m_MethodName: pointerUpJump
+        - m_Target: {fileID: 2143220112}
+          m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+          m_MethodName: pointerUpJ
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12888,9 +12888,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2143220120}
-          m_TargetAssemblyTypeName: Move, Assembly-CSharp
-          m_MethodName: pointerDownJump
+        - m_Target: {fileID: 2143220112}
+          m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+          m_MethodName: pointerDownJ
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13836,9 +13836,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2143220120}
-          m_TargetAssemblyTypeName: Move, Assembly-CSharp
-          m_MethodName: pointerUpJump
+        - m_Target: {fileID: 2143220112}
+          m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+          m_MethodName: pointerUpK
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13865,9 +13865,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2143220120}
-          m_TargetAssemblyTypeName: Move, Assembly-CSharp
-          m_MethodName: pointerDownJump
+        - m_Target: {fileID: 2143220112}
+          m_TargetAssemblyTypeName: PlayerCombat, Assembly-CSharp
+          m_MethodName: pointerDownK
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15340,7 +15340,7 @@ Transform:
   m_GameObject: {fileID: 2143220109}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.27, y: 6.62, z: 0}
+  m_LocalPosition: {x: -9.1, y: 1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
