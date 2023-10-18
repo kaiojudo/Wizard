@@ -96,7 +96,7 @@ public class PlayerCombat : MonoBehaviour
             if (enemy.GetComponent<Boss>())
             {
 
-                enemy.GetComponent<Boss>().TakeDamage(attackDamageK);
+                enemy.GetComponent<Boss>().TakeDamage(attackDamageJ);
             }
         }
     }

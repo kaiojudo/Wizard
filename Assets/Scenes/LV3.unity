@@ -871,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f872b78268886b42bb7439bd3d08aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
+  src: {fileID: 1012472129}
   pickCoin: {fileID: 8300000, guid: a2a20eee477b0284a9b2b2f52f86264c, type: 3}
 --- !u!61 &181986089
 BoxCollider2D:
@@ -979,7 +979,7 @@ Transform:
   m_GameObject: {fileID: 181986087}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33, y: 13, z: 0}
+  m_LocalPosition: {x: 32.98, y: 13, z: 0}
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1691180096}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1691180096}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -2086,9 +2086,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1047310803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: -160}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 100, y: 70}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453719129
@@ -3694,9 +3694,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1047310803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: -160}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -80, y: 70}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754279622
@@ -3949,7 +3949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f872b78268886b42bb7439bd3d08aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
+  src: {fileID: 1012472129}
   pickCoin: {fileID: 8300000, guid: a2a20eee477b0284a9b2b2f52f86264c, type: 3}
 --- !u!61 &772004387
 BoxCollider2D:
@@ -4262,7 +4262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f872b78268886b42bb7439bd3d08aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
+  src: {fileID: 1012472129}
   pickCoin: {fileID: 8300000, guid: a2a20eee477b0284a9b2b2f52f86264c, type: 3}
 --- !u!61 &883545315
 BoxCollider2D:
@@ -4410,9 +4410,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1047310803}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -160}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 200, y: 70}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902362988
@@ -4709,7 +4709,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1691180096}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: SoundOnOff
         m_Mode: 1
@@ -6598,7 +6598,7 @@ MonoBehaviour:
   staminaBar: {fileID: 1792727083}
   animator: {fileID: 1343851304}
   gameOverUI: {fileID: 1939391706}
-  src: {fileID: 1812639667}
+  src: {fileID: 1012472129}
   dieEff: {fileID: 8300000, guid: 3eb74472a230d824e855b3a7bd3ddf89, type: 3}
   takeDmgEff: {fileID: 8300000, guid: 8c32e8cdf65e1e64e9bb1da844a6475b, type: 3}
   respawnPoint: {x: 0, y: 0, z: 0}
@@ -6618,7 +6618,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1407065998}
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4352
   attackRange: 0.5
   attackDamageJ: 40
   src: {fileID: 2021780926}
@@ -13781,7 +13781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f872b78268886b42bb7439bd3d08aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
+  src: {fileID: 1012472129}
   pickCoin: {fileID: 8300000, guid: a2a20eee477b0284a9b2b2f52f86264c, type: 3}
 --- !u!61 &1538445127
 BoxCollider2D:
@@ -14841,11 +14841,11 @@ MonoBehaviour:
   bgAudio: {fileID: 8300000, guid: 91346552fbb08894992d040e1527aef0, type: 3}
   srcMove: {fileID: 1012472129}
   srcCombat: {fileID: 2021780926}
-  mute: {fileID: 0}
+  mute: {fileID: 950900211}
   newImg: {fileID: 21300000, guid: 034076944389da44b9e8e58d311ef57a, type: 3}
   isPause: 0
-  pauseMenuUI: {fileID: 0}
-  gameOverMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 761246818}
+  gameOverMenuUI: {fileID: 1939391706}
 --- !u!114 &1691180097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15969,7 +15969,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1691180096}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -16102,7 +16102,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1691180096}
         m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
         m_MethodName: ReStart
         m_Mode: 1
@@ -17117,7 +17117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f872b78268886b42bb7439bd3d08aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
+  src: {fileID: 1012472129}
   pickCoin: {fileID: 8300000, guid: a2a20eee477b0284a9b2b2f52f86264c, type: 3}
 --- !u!61 &2030422302
 BoxCollider2D:
@@ -17262,7 +17262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f872b78268886b42bb7439bd3d08aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
+  src: {fileID: 1012472129}
   pickCoin: {fileID: 8300000, guid: a2a20eee477b0284a9b2b2f52f86264c, type: 3}
 --- !u!61 &2043385276
 BoxCollider2D:

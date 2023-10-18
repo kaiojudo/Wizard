@@ -13,7 +13,11 @@ public class Coin : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             src.clip = pickCoin;
-            src.Play();
+            if (EventManager.onofSOund)
+            {
+                src.Play();
+            }
+          
             Destroy(gameObject);
             Player.point += 150;
             Player.pointtoHp += 150;

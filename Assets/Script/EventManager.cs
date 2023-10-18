@@ -13,23 +13,56 @@ public class EventManager : MonoBehaviour
     [SerializeField] Image mute;
     [SerializeField] Sprite newImg;
     private Sprite f_newImg;
+    private GameObject jumpBtn;
+    private GameObject leftBtn;
+    private GameObject rightBtn;
+    private GameObject atkJBtn;
+    private GameObject atkKBtn;
+    private GameObject atkLBtn;
 
     public static bool checkAudio = true;
     public bool isPause = false;
     public GameObject pauseMenuUI;
     public GameObject gameOverMenuUI;
+
+    public static bool onofSOund = true;
     private void Start()
     {
+        jumpBtn = GameObject.Find("JumpBtn");
+        leftBtn = GameObject.Find("LeftBtn");
+        rightBtn = GameObject.Find("RightBtn");
+        atkJBtn = GameObject.Find("ATKJ");
+        atkKBtn = GameObject.Find("ATKK");
+        atkLBtn = GameObject.Find("ATKL");
         srcBg.clip = bgAudio;
 
         if(checkAudio)
         {
             srcBg.Play();
         }
+
     }
     void Update()
     {
-     
+
+        if (onofSOund)
+        {
+            jumpBtn.SetActive(true);
+            leftBtn.SetActive(true);
+            rightBtn.SetActive(true);
+            atkJBtn.SetActive(true);
+            atkKBtn.SetActive(true);
+            atkLBtn.SetActive(true);
+        }
+        else
+        {
+            jumpBtn.SetActive(false);
+            leftBtn.SetActive(false);
+            rightBtn.SetActive(false);
+            atkJBtn.SetActive(false);
+            atkKBtn.SetActive(false);
+            atkLBtn.SetActive(false);
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPause)
@@ -42,17 +75,23 @@ public class EventManager : MonoBehaviour
             }
         }
     }
+
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         isPause = false;
+        onofSOund = true;
+
+
     }
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPause = true;
+        onofSOund = false;
+
     }
     public void ReStart()
     {
