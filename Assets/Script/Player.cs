@@ -85,7 +85,9 @@ public class Player : MonoBehaviour
                 src.clip = takeDmgEff;
                 src.Play();
             }
+            animator.SetTrigger("isHurt");
             TakeDamage(20);
+            transform.position -= new Vector3(1, -1, 0) * 1/2;
             if (currentHealth <= 0)
             {
                 life -= 1;
@@ -110,6 +112,7 @@ public class Player : MonoBehaviour
                 src.Play();
             }
             TakeDamage(10);
+            animator.SetTrigger("isHurt");
             if (currentHealth <= 0)
             {
                 life -= 1;
@@ -126,6 +129,7 @@ public class Player : MonoBehaviour
                 src.clip = takeDmgEff;
                 src.Play();
             }
+            animator.SetTrigger("isHurt");
             TakeDamage(25);
             if (currentHealth <= 0)
             {

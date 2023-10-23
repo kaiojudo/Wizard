@@ -2303,7 +2303,7 @@ Transform:
   m_GameObject: {fileID: 300724046}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.6, y: -19.6, z: 0}
+  m_LocalPosition: {x: 14.51, y: -19.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7744,7 +7744,7 @@ Transform:
   m_GameObject: {fileID: 1079460773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.3, y: -35.2, z: 0}
+  m_LocalPosition: {x: -100.23, y: -34.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8592,8 +8592,8 @@ Transform:
   m_GameObject: {fileID: 1246946610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7905555, y: -0.5199, z: -0.017790603}
-  m_LocalScale: {x: 0.2, y: 0.1805, z: 1}
+  m_LocalPosition: {x: -5.7905555, y: -0.4699806, z: -0.017790603}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 818445988}
@@ -10316,7 +10316,6 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 2.54, y: 2.56}
-      - {x: 2.568285, y: 2.2281575}
       - {x: -2.56, y: -2.54}
       - {x: -2.56, y: -2.56}
       - {x: 2.56, y: -2.56}
@@ -10729,7 +10728,7 @@ Transform:
   m_GameObject: {fileID: 1591212052}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.1978445, y: -2.1599808, z: -0.017790603}
+  m_LocalPosition: {x: 9.206, y: -2.131, z: -0.017790603}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11218,7 +11217,7 @@ Transform:
   m_GameObject: {fileID: 1690441712}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.4694443, y: -1.1699806, z: -0.017790603}
+  m_LocalPosition: {x: 5.4694443, y: -1.135, z: -0.017790603}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
