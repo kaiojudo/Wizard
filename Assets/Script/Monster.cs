@@ -13,6 +13,7 @@ public class Monster : MonoBehaviour
     public GameObject pointB;
     private Rigidbody2D rb;
     private Transform currentPoint;
+    [SerializeField] Transform player;
     public float speed = 2;
 
 
@@ -52,6 +53,25 @@ public class Monster : MonoBehaviour
             speed = 0;
         }
 
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+          Vector3 check = transform.position - player.position;
+            if(check.x < 0 && currentPoint == pointB.transform) {
+                Flip();
+                rb.velocity = new Vector2(speed, 0);
+                currentPoint = pointA.transform;
+
+            }
+            if (check.x > 0 && currentPoint == pointA.transform)
+            {
+                Flip();
+                rb.velocity = new Vector2(-speed, 0);
+                currentPoint= pointB.transform;
+            }
+        }
     }
     public void TakeDamage(int damage)
     {

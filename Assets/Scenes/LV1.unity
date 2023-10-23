@@ -3384,8 +3384,8 @@ MonoBehaviour:
   animator: {fileID: 403112321}
   pointA: {fileID: 597559427}
   pointB: {fileID: 75470782}
+  player: {fileID: 2143220119}
   speed: 2
-  staminaBar: {fileID: 0}
 --- !u!50 &403112323
 Rigidbody2D:
   serializedVersion: 4
@@ -8745,8 +8745,8 @@ MonoBehaviour:
   animator: {fileID: 1286485192}
   pointA: {fileID: 967164523}
   pointB: {fileID: 1038953600}
+  player: {fileID: 2143220119}
   speed: 2
-  staminaBar: {fileID: 0}
 --- !u!95 &1286485192
 Animator:
   serializedVersion: 5
@@ -10515,8 +10515,8 @@ MonoBehaviour:
   animator: {fileID: 1496709443}
   pointA: {fileID: 1431701940}
   pointB: {fileID: 1981132442}
+  player: {fileID: 2143220119}
   speed: 2
-  staminaBar: {fileID: 0}
 --- !u!95 &1496709443
 Animator:
   serializedVersion: 5
@@ -14131,7 +14131,6 @@ MonoBehaviour:
   atkJ: {fileID: 8300000, guid: a7b6f9b5567fc204d9aebfc2a4a66489, type: 3}
   atkK: {fileID: 8300000, guid: 0f6908b2dbd9c364bbc5350b7e6224f6, type: 3}
   atkL: {fileID: 8300000, guid: 171a0d16fa9133449afb48d837ccc6ba, type: 3}
-  staminaBar: {fileID: 1802134782}
 --- !u!95 &2143220113
 Animator:
   serializedVersion: 5
