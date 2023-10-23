@@ -30,19 +30,5 @@ public class AreatoAtk : MonoBehaviour
     {
         Instantiate(objecttoSpawn, transform.position, transform.rotation);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Vector3 check = transform.position - player.position;
-            if (check.x > 0)
-            {
-                player.position -= new Vector3(1, -1, 0) / 2;
-            }
-            if (check.x < 0)
-            {
-                player.position -= new Vector3(-1, -1, 0) / 2;
-            }
-        }
-    }
+  
 }

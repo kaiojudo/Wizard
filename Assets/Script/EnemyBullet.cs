@@ -31,5 +31,18 @@ public class EnemyBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Vector3 check = transform.position - player.transform.position;
+            if (check.x > 0)
+            {
+                player.transform.position -= new Vector3(1, -1, 0) / 2;
+            }
+            if (check.x < 0)
+            {
+                player.transform.position -= new Vector3(-1, -1, 0) / 2;
+            }
+        }
     }
 }
