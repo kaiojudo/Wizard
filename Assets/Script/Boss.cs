@@ -58,6 +58,7 @@ public class Boss : MonoBehaviour
     {
         curentHealth -= damage;
         animator.SetTrigger("isHurt");
+        Debug.Log(curentHealth);
         if (curentHealth <= 0)
         {
             Die();
@@ -77,5 +78,21 @@ public class Boss : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         /*  this.enabled = false;*/
 
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Vector3 check = transform.position - player.position;
+            if (check.x > 0)
+            {
+                player.position -= new Vector3(1, -1, 0) / 2;
+            }
+            if (check.x < 0)
+            {
+                player.position -= new Vector3(-1, -1, 0) / 2;
+            }
+        }
+       
     }
 }

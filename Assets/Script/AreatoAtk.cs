@@ -9,13 +9,6 @@ public class AreatoAtk : MonoBehaviour
     [SerializeField] private float timeToSpawn;
     private float currentTimeToSpawn;
     [SerializeField] private float speed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -37,5 +30,19 @@ public class AreatoAtk : MonoBehaviour
     {
         Instantiate(objecttoSpawn, transform.position, transform.rotation);
     }
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Vector3 check = transform.position - player.position;
+            if (check.x > 0)
+            {
+                player.position -= new Vector3(1, -1, 0) / 2;
+            }
+            if (check.x < 0)
+            {
+                player.position -= new Vector3(-1, -1, 0) / 2;
+            }
+        }
+    }
 }

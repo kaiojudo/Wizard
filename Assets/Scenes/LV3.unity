@@ -2529,6 +2529,7 @@ MonoBehaviour:
   animator: {fileID: 483273113}
   pointA: {fileID: 1378627930}
   pointB: {fileID: 60310162}
+  player: {fileID: 1082672955}
   speed: 2
 --- !u!95 &483273113
 Animator:
@@ -7194,6 +7195,7 @@ MonoBehaviour:
   animator: {fileID: 1451052841}
   pointA: {fileID: 520498142}
   pointB: {fileID: 1086174820}
+  player: {fileID: 1082672955}
   speed: 2
 --- !u!95 &1451052841
 Animator:
@@ -7396,7 +7398,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15526843, y: -0.24211302}
+  m_Offset: {x: 0.22109666, y: -0.24211302}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7407,7 +7409,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64946306, y: 0.47577387}
+  m_Size: {x: 0.5178066, y: 0.47577387}
   m_EdgeRadius: 0
 --- !u!95 &1453617933
 Animator:
@@ -13651,7 +13653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.7, y: -58.8}
+  m_AnchoredPosition: {x: 103.70001, y: -58.799988}
   m_SizeDelta: {x: 157.45, y: 25.109985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1582058261
@@ -14557,6 +14559,7 @@ MonoBehaviour:
   animator: {fileID: 1766658278}
   pointA: {fileID: 1560505462}
   pointB: {fileID: 1460877298}
+  player: {fileID: 1082672955}
   speed: 2
 --- !u!95 &1766658278
 Animator:
