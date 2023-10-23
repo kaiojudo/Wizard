@@ -31,13 +31,9 @@ public class Boss : MonoBehaviour
                 if (timer > 3)
                 {
                     timer = 0;
-                    animator.SetBool("isAttack", true);
+                    animator.SetTrigger("isAttack");
                     Shoot();
                 }
-            }
-            if (checkBoss >= 30)
-            {
-                animator.SetBool("isAttack", false);
             }
             Vector2 check = player.position - transform.position;
             if (check.x > 0)
