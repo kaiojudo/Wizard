@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Trap"))
         {
             life -= 1;
@@ -87,7 +88,7 @@ public class Player : MonoBehaviour
             }
             animator.SetTrigger("isHurt");
             TakeDamage(20);
-            transform.position -= new Vector3(1, -1, 0) * 1/2;
+
             if (currentHealth <= 0)
             {
                 life -= 1;

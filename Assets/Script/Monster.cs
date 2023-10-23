@@ -59,7 +59,15 @@ public class Monster : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
           Vector3 check = transform.position - player.position;
-            if(check.x < 0 && currentPoint == pointB.transform) {
+            if (check.x > 0)
+            {
+                player.position -= new Vector3(1, -1, 0) / 2;
+            }
+            if (check.x < 0)
+            {
+                player.position -= new Vector3(-1, -1, 0) / 2;
+            }
+            if (check.x < 0 && currentPoint == pointB.transform) {
                 Flip();
                 rb.velocity = new Vector2(speed, 0);
                 currentPoint = pointA.transform;
