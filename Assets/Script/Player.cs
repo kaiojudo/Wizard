@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public static int life = 2;
+    public static bool spawn = false;
     public int maxHealth = 100;
     public static int currentHealth = 100;
     public int maxStamina = 100;

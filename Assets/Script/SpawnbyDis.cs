@@ -8,6 +8,12 @@ public class PlatformControl : MonoBehaviour
     public float currentDis = 0f;
     public float limmitDis = 20f;
     public float respawnDis = 40f;
+    float firstCheck;
+
+    private void Awake()
+    {
+        firstCheck = player.transform.position.x;
+    }
 
     protected void FixedUpdate()
     {
@@ -22,6 +28,10 @@ public class PlatformControl : MonoBehaviour
         }
         Debug.Log("Spawn");
         Vector3 pos = transform.position;
+        if(Player.spawn == true)
+        {
+            pos.x = firstCheck;
+        }
         pos.x += this.respawnDis;
         transform.position = pos;
     }
